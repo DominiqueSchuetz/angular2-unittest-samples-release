@@ -12,7 +12,7 @@ import {BlogRollComponent} from '../blog-roll/blog-roll.component';
 import {FormsModule} from '@angular/forms';
 import {HttpModule, BaseRequestOptions, Http, ConnectionBackend, Response, ResponseOptions} from '@angular/http';
 import {BlogEntryFormComponent} from '../blog-entry-form/blog-entry-form.component';
-import {MockBackend, MockConnection} from '@angular/http/testing';
+import {MockBackend, MockConnection} from '@angular/http/testing'; 
 
 describe('Application Shell', () => {
   let mockBackend: MockBackend;

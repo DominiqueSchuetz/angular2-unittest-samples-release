@@ -29,7 +29,8 @@
   "packages": [],
   "e2e": {
     "protractor": {
-      "config": "./protractor.conf.js"
+      "config": "./e2e/config/protractor.conf.localTesting.js"
+      
     }
   },
   "test": {

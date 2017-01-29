@@ -54,7 +54,7 @@ describe('Blog Roll Component...', () => {
         let isBlogListSearch = connection.request.url &&
                                connection.request.method === RequestMethod.Get &&
                                connection.request.url.match(/\/server\/api\/blogs/) &&
-                               connection.request.url.match(/\/server\/api\/blogs/).length === 1 ? true: false;
+                               connection.request.url.match(/\/server\/api\/blogs/).length === 1 ? true: false; 
         let isBlogSingle = connection.request.url &&
                                connection.request.method === RequestMethod.Get &&
                                connection.request.url.match(/\/server\/api\/blogs\/26/) &&
@@ -153,7 +153,7 @@ describe('Blog Roll Component...', () => {
       expect(fixture.nativeElement.querySelector('#blog-roll-panel') === null).toBe(true);
   });
 
-  it('should open the editing pane if the edit button is clicked', () => {
+  it('should open the editing panel if the edit button is clicked', () => {
     getTestBed().compileComponents().then(() => {
       let testBed = getTestBed();
       mockBackendFunctions(testBed);

@@ -12,6 +12,9 @@ module.exports = function (config) {
       require('karma-story-reporter'),
       require('angular-cli/plugins/karma')
     ],
+    mime: {
+      'text/x-typescript': ['ts','tsx']
+    },
     files: [
       { pattern: './src/test.ts', watched: false }
     ],
@@ -33,7 +36,7 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: [  'Chrome' ],
     singleRun: false
   });
 };

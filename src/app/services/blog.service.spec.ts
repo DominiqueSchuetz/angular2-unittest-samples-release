@@ -15,7 +15,7 @@ import {BlogEntry} from '../domain/blog-entry';
 import {BlogService} from './blog.service';
 
 describe('Blog Service', () => {
-  let mockBackend: MockBackend;
+  let mockBackend: MockBackend; 
 
   // All heed this block - it is required so that the test injector
   // is properly set up. Without doing this, you won't get the
@@ -46,7 +46,7 @@ describe('Blog Service', () => {
     mockBackend = getTestBed().get(MockBackend);
   }));
 
-  it('should get blogs', done => {
+  it('should get blogs', (done) => {
     let blogService: BlogService;
 
     getTestBed().compileComponents().then(() => {
