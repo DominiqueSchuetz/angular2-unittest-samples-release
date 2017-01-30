@@ -22,12 +22,22 @@ describe('angular2-unittest-samples-release App', function () {
 
   it('should getItBoth', () => {
     page.getItBoth().then((res) => {
-        expect(res).toEqual('Edit Blog Entry');
+      expect(res).toEqual('Edit Blog Entry');
     });
   });
 
   it('should set new title', () => {
-    page.setBlogTitle();
+    page.setNewBlogTitle();
+    page.pressSaveButton().then((resText) => {
+      expect(resText).toEqual('Green Trane');
+    });
+  });
+
+  it('should have two tablerows', () => {
+    page.deleteABlogEntry();
+    page.getTheNumberOfTabelRows().then((numberOfTRs) => {
+      expect(numberOfTRs).toBeGreaterThan(1);
+    });
   });
 
 });

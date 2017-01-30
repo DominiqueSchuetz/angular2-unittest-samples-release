@@ -1,7 +1,7 @@
 {
   "blogs": [
     {
-      "title": "Blue Trane",
+      "title": "Green Trane",
       "contentRendered": "<h1 id=\"john-coletrane\">John Coletrane</h1>\n<p>Is a jazz legend.</p>\n",
       "contentMarkdown": "# John Coletrane\n\nIs a jazz legend.\n",
       "id": 7
@@ -14,8 +14,8 @@
     },
     {
       "title": "Bob Dylan",
-      "contentRendered": "<h1 id=\"bob-dylan-holds-the-nobel-price\">Bob Dylan holds  the Nobel-Price</h1>\n",
-      "contentMarkdown": "# Bob Dylan holds  the Nobel-Price",
+      "contentRendered": "<h1 id=\"holds-the-nobel-price\">Holds the nobel price</h1>\n",
+      "contentMarkdown": "# Holds the nobel price",
       "id": 9
     }
   ]
