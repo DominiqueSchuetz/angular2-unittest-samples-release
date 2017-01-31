@@ -7,7 +7,7 @@ describe('angular2-unittest-samples-release App', function () {
     page = new BlogRollE2E();
   });
 
-  it('should display message saying app works', () => {
+  it('should display message saying Simple Task Manager', () => {
     page.navigateToRoot();
     expect(page.getParagraphText()).toEqual('Simple Task Manager');
   });
@@ -39,5 +39,4 @@ describe('angular2-unittest-samples-release App', function () {
       expect(numberOfTRs).toBeGreaterThan(1);
     });
   });
-
 });
