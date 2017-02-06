@@ -8,7 +8,7 @@ import {MarkdownService} from '../services/markdown.service';
   templateUrl: 'blog-entry-form.component.html'
 })
 export class BlogEntryFormComponent implements OnInit {
-  @Input() blog: BlogEntry;
+  @Input()  blog: BlogEntry;
   @Output() submitted: EventEmitter<BlogEntry> = new EventEmitter<BlogEntry>();
   @Output() cancelled: EventEmitter<any> = new EventEmitter();
   editableBlogEntry: BlogEntry;

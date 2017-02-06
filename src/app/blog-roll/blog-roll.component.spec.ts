@@ -5,7 +5,7 @@ import {
 import {
     HttpModule, ResponseOptions,
     Response, RequestMethod, Http,
-    BaseRequestOptions, XHRBackend
+    BaseRequestOptions, XHRBackend, ConnectionBackend
 } from '@angular/http';
 import {MockBackend, MockConnection} from '@angular/http/testing';
 import {BlogRollComponent} from './blog-roll.component';

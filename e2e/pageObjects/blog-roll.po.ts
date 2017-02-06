@@ -63,6 +63,6 @@ export class BlogRollE2E {
     }
 
     getTheNumberOfTabelRows() {
-        return element.all(by.css('tr.rows')).count();
+        return element.all(by.css('tr.rows')).count(); 
     }
 }

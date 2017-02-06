@@ -1,6 +1,7 @@
 import {AppShellComponent} from './app-shell.component';
 import {
   fakeAsync,
+  async,
   tick,
   TestBed,
   getTestBed,
@@ -15,10 +16,14 @@ import {BlogEntryFormComponent} from '../blog-entry-form/blog-entry-form.compone
 import {MockBackend, MockConnection} from '@angular/http/testing'; 
 
 describe('Application Shell', () => {
+  // mocking interaction with an HTTP source
+  // MockBackend lets us create a fake server/backend 
+  // MockConnection gives us the ability to intercept connections to that fake server
+  // BaseRequestOptions is a default setup for making an HTTP request
   let mockBackend: MockBackend;
   let testBed: TestBed;
 
-  beforeEach(() => {
+  beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppShellComponent,
@@ -45,7 +50,7 @@ describe('Application Shell', () => {
     });
     testBed = getTestBed();
     mockBackend = testBed.get(MockBackend);
-  });
+  }));
 
   it('Can be created', fakeAsync(() => {
     testBed.compileComponents().then(() => {
